@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CRIAÇÃO DE UMA NOVA CONTA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title>Preencha todas as informações</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input [(ngModel)]="name" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input [(ngModel)]="email" type="email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input [(ngModel)]="password" type="password" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirme a senha</ion-label>
+          <ion-input [(ngModel)]="passconfirm" type="password" required></ion-input>
+        </ion-item>
+        <div class="footer">
+          <ion-button (click)="tryCreate()" color="primary">Criar conta</ion-button>
+          <hr>
+          <a [routerLink]="['/home']">Voltar</a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

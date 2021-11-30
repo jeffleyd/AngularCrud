@@ -1,0 +1,43 @@
+.card {
+  min-width: 400px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.logout {
+  margin-right: 30px;
+  font-size: 23px;
+}
+.profile {
+  margin-right: 25px;
+  font-size: 23px;
+}
+
+.tools {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 25px;
+  font-size: 30px;
+  color: black;
+  z-index: 9999;
+}
+
+.content {
+  display: flex;justify-content: center;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.add {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: dashed grey;
+  margin-top: 10px;
+  font-size: 40px;
+  color: grey;
+}

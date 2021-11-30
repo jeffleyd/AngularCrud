@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CATEGORIA: {{name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title>Preencha todas as informações</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input [(ngModel)]="name" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Imagem</ion-label>
+          <ion-input [(ngModel)]="url" id="file" (ionChange)="getFile(inputFile)" type="file" required></ion-input>
+        </ion-item>
+        <div class="footer">
+          <div style="display: flex; flex-direction: row; justify-content: center">
+            <ion-button (click)="deleteItem()" *ngIf="id !== '0'" color="danger">DELETAR</ion-button>
+            <ion-button (click)="updateItem()" color="primary">SALVAR</ion-button>
+          </div>
+          <hr>
+          <a [routerLink]="['/main']">Voltar</a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

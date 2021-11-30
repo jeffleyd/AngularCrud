@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MEU PERFIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-card class="card">
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input type="text" value="Jefferson silva" disabled=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" value="jeffleyd@gmail.com" disabled=""></ion-input>
+        </ion-item>
+        <div class="footer">
+          <a [routerLink]="['/main']">Voltar</a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

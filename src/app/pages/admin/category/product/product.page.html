@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>LISTA DE PRODUTOS DA CATEGORIA</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col *ngFor="let item of products" size="4">
+      <div [routerLink]="['/category/' + this.id + '/product/edit/' + item.id]" class="tools">
+        <ion-icon name="options-outline"></ion-icon>
+      </div>
+      <ion-card style="height: 100%">
+        <img src="{{item.image}}" />
+        <ion-card-header>
+          <ion-card-content>
+            <h3>{{item.name}}</h3>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    <ion-col [routerLink]="['/category/' + this.id + '/product/edit/0']" size="4">
+      <div class="add">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

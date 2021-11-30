@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>BEM VINDO AO TESTE DO JEFF **MVP** (ANGULAR+NODEJS)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title>Realize seu acesso</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input [(ngModel)]="email" type="email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input [(ngModel)]="password" type="password" required></ion-input>
+        </ion-item>
+        <div class="footer">
+          <ion-button (click)="tryLogin()" color="primary">Realizar acesso</ion-button>
+          <hr>
+          <a [routerLink]="['/home/register']">Criar uma conta</a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
