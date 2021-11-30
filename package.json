@@ -5,8 +5,8 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm serve",
+    "build": "npm build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -30,12 +30,13 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "heroku": "^7.59.2",
     "http-server": "^14.0.0",
     "morgan": "^1.10.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4",
-    "typescript": "~4.2.4"
+    "typescript": "~4.2.4",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.1",
