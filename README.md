@@ -1,4 +1,4 @@
-# testeAngular
+# Angular com Ionic
 #Instale o node js e as seguintes dependências:
 <br>
 npm install -g @ionic/cli
